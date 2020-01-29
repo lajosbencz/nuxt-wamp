@@ -1,6 +1,6 @@
 {
   "name": "nuxt-wamp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "WAMP Autobahn wrapper for Nuxt.js, served as an SSR compatible Module",
   "license": "GPL-v3-or-later",
   "author": "Lajos Bencz <lazos@lazos.me>",
@@ -11,7 +11,7 @@
     "dev": "nuxt test/fixture",
     "lint": "eslint lib test",
     "test": "yarn lint && jest",
-    "release": "yarn test && standard-version && git push --follow-tags && npm publish"
+    "release": "standard-version && git push --follow-tags && npm publish"
   },
   "files": [
     "lib",
