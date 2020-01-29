@@ -21,7 +21,7 @@
     "autobahn": "^20.1.1",
     "consola": "^2.10.1",
     "semver": "^6.3.0",
-    "ws": "^2.3.1"
+    "ws": "^7.2.1"
   },
   "devDependencies": {
     "@babel/core": "latest",
