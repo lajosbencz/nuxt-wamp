@@ -1,8 +1,13 @@
 {
   "name": "nuxt-wamp",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "WAMP Autobahn wrapper for Nuxt.js, served as an SSR compatible Module",
-  "keywords": ["nuxt", "module", "wamp", "client"],
+  "keywords": [
+    "nuxt",
+    "module",
+    "wamp",
+    "client"
+  ],
   "license": "GPL-3.0-or-later",
   "author": "Lajos Bencz <lazos@lazos.me>",
   "main": "lib/module.js",
