@@ -56,8 +56,8 @@ function setupNightlife (config) {
         autoCreateRealms: false,
         logger,
         ...config
-    });
-    router.createRealm('dev');
+    })
+    router.createRealm('dev')
     return router
 }
 
@@ -66,7 +66,7 @@ function setupAutobahn (config) {
         const connection = new autobahn.Connection({
             url: 'ws://localhost:4000/',
             realm: 'dev'
-        });
+        })
         connection.onopen = function (session) {
             resolve({ connection, session })
         }
@@ -76,7 +76,7 @@ function setupAutobahn (config) {
             reject(e)
         }
         connection.open()
-    });
+    })
 }
 
 module.exports = {

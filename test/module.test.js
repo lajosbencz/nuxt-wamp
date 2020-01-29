@@ -2,7 +2,7 @@
 const { setupNuxt, setupNightlife, setupAutobahn } = require('./_utils')
 
 describe('module', () => {
-    let nuxt, nightlife, connection, session;
+    let nuxt, nightlife, connection, session
 
     beforeAll(async () => {
         try {
@@ -11,9 +11,8 @@ describe('module', () => {
             await nuxt.builder.build()
             await nuxt.listen(3000)
         } catch (e) {
-            console.error(e);
+            console.error(e)
         }
-
     }, 60000)
 
     afterAll(async () => {

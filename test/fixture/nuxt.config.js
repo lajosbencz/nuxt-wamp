@@ -1,4 +1,4 @@
-const { resolve } = require('path');
+const { resolve } = require('path')
 
 module.exports = {
     rootDir: resolve(__dirname, '../..'),
@@ -8,7 +8,7 @@ module.exports = {
         resourceHints: false
     },
     modules: [
-        require('../..')
+        require('../../lib/module')
     ],
     serverMiddleware: [
     ],
@@ -16,4 +16,4 @@ module.exports = {
         terser: false
     },
     plugins: ['~/plugins/wamp']
-};
+}
