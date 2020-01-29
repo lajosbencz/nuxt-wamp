@@ -16,7 +16,7 @@
   "scripts": {
     "dev": "nuxt test/fixture",
     "lint": "eslint lib test",
-    "test": "yarn lint && jest",
+    "test": "npm run lint && jest",
     "release": "standard-version && npm publish && git push --follow-tags"
   },
   "files": [
