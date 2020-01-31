@@ -47,7 +47,7 @@
     "eslint-plugin-vue": "latest",
     "jest": "latest",
     "nightlife-rabbit": "git+https://github.com/christian-raedel/nightlife-rabbit.git",
-    "nuxt-edge": "^2.6.2-25915688.22138535",
+    "nuxt-edge": "^2.11.1-26340491.0bd794d",
     "standard-version": "latest"
   }
 }
