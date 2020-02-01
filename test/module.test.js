@@ -11,6 +11,7 @@ describe('module', () => {
             await nuxt.builder.build()
             await nuxt.listen(3000)
         } catch (e) {
+            // eslint-disable-next-line no-console
             console.error(e)
         }
     }, 60000)
