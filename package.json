@@ -10,7 +10,7 @@
   ],
   "license": "GPL-3.0-or-later",
   "author": "Lajos Bencz <lazos@lazos.me>",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "types": "types/index.d.ts",
   "homepage": "https://github.com/lajosbencz/nuxt-wamp#readme",
   "repository": {
