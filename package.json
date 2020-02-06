@@ -15,7 +15,10 @@
   "homepage": "https://github.com/lajosbencz/nuxt-wamp#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lajosbencz/vue-wamp"
+    "url": "git+https://github.com/lajosbencz/nuxt-wamp"
+  },
+  "bugs": {
+    "url": "https://github.com/lajosbencz/nuxt-wamp/issues"
   },
   "scripts": {
     "dev": "nuxt test/fixture",
