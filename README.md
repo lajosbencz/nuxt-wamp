@@ -1,6 +1,8 @@
 # nuxt-wamp
 WAMP Autobahn wrapper for Nuxt.js, served as an SSR compatible Module
 
+See [vue-wamp](https://github.com/lajosbencz/vue-wamp) for more details
+
 ## Features
  - Challenge callback for authentication is nuxt context aware
  - Easy usage through injection (global, component, config, app, store)
