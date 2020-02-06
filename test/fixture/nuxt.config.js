@@ -8,10 +8,12 @@ module.exports = {
         resourceHints: false
     },
     modules: [
-        require('../../lib/module')
+        ['../../src/index.js', {
+            url: 'ws://localhost:4334',
+            realm: 'realm1'
+        }]
     ],
-    serverMiddleware: [
-    ],
+    serverMiddleware: [],
     build: {
         terser: false
     },

@@ -1,12 +1,11 @@
 
-const { setupNuxt, setupNightlife, setupAutobahn } = require('./_utils')
+const { setupNuxt, setupAutobahn } = require('./_utils')
 
 describe('module', () => {
-    let nuxt, nightlife, connection, session
+    let nuxt, connection, session
 
     beforeAll(async () => {
         try {
-            nightlife = setupNightlife()
             nuxt = await setupNuxt()
             await nuxt.builder.build()
             await nuxt.listen(3000)
@@ -18,7 +17,6 @@ describe('module', () => {
 
     afterAll(async () => {
         connection.close()
-        await nightlife.close()
         await nuxt.close()
     })
 

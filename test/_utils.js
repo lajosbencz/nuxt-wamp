@@ -1,11 +1,6 @@
-
-const http = require('http')
-const autobahn = require('autobahn')
-const nightlife = require('nightlife-rabbit')
-const CLogger = require('node-clogger')
-const { Nuxt, Builder } = require('nuxt-edge')
-
 const defaultConfig = require('./fixture/nuxt.config')
+const { Nuxt, Builder } = require('nuxt-edge')
+const autobahn = require('autobahn')
 
 jest.setTimeout(60000)
 
@@ -46,21 +41,6 @@ async function setupNuxt (config) {
     return nuxt
 }
 
-function setupNightlife (config) {
-    const logger = new CLogger({ name: '' })
-    logger.log = function (level, message) { }
-    const router = nightlife.createRouter({
-        httpServer: http.createServer(),
-        port: 4000,
-        path: '/',
-        autoCreateRealms: false,
-        logger,
-        ...config
-    })
-    router.createRealm('dev')
-    return router
-}
-
 function setupAutobahn (config) {
     return new Promise((resolve, reject) => {
         const connection = new autobahn.Connection({
@@ -68,7 +48,10 @@ function setupAutobahn (config) {
             realm: 'dev'
         })
         connection.onopen = function (session) {
-            resolve({ connection, session })
+            resolve({
+                connection,
+                session
+            })
         }
         connection.onclose = function (reason) {
             const e = new Error(reason)
@@ -82,6 +65,5 @@ function setupAutobahn (config) {
 module.exports = {
     setupMockNuxt,
     setupNuxt,
-    setupNightlife,
     setupAutobahn
 }
