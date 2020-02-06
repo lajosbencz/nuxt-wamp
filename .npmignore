@@ -1,0 +1,6 @@
+.idea/
+coverage/
+test/
+jest.config.js
+.gitbook.yaml
+renovate.json
