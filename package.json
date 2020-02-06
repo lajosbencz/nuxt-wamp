@@ -12,14 +12,18 @@
   "author": "Lajos Bencz <lazos@lazos.me>",
   "main": "lib/index.js",
   "types": "types/index.d.ts",
-  "repository": "lajosbencz/nuxt-wamp",
+  "homepage": "https://github.com/lajosbencz/nuxt-wamp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lajosbencz/vue-wamp"
+  },
   "scripts": {
     "dev": "nuxt test/fixture",
-    "lint": "eslint lib test",
+    "lint": "eslint src test",
     "test": "npm run lint && jest"
   },
   "files": [
-    "lib",
+    "src",
     "types/*.d.ts"
   ],
   "dependencies": {

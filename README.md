@@ -73,4 +73,4 @@ export default {
 
 ## Todo
  - Meaningful tests
- - TypeScript generation
+ - Provide typing
