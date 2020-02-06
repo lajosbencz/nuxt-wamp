@@ -12,7 +12,7 @@
   "author": "Lajos Bencz <lazos@lazos.me>",
   "main": "lib/index.js",
   "types": "types/index.d.ts",
-  "homepage": "https://github.com/lajosbencz/nuxt-wamp",
+  "homepage": "https://github.com/lajosbencz/nuxt-wamp#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lajosbencz/vue-wamp"
