@@ -1,7 +1,7 @@
 <script>
 export default {
-    async asyncData () {
-        const time = await this.$wamp.call('time')
+    async asyncData ({ app }) {
+        const time = await app.$wamp.call('time')
         return {
             time
         }
