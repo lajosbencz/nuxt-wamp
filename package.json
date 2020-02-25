@@ -30,7 +30,7 @@
     "types/*.d.ts"
   ],
   "dependencies": {
-    "vue-wamp": "^3.1.5"
+    "vue-wamp": "^3.1.6"
   },
   "devDependencies": {
     "@babel/core": "latest",
