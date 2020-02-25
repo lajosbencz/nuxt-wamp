@@ -1,6 +1,6 @@
 {
   "name": "nuxt-wamp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "WAMP Autobahn wrapper for Nuxt.js, served as an SSR compatible Module",
   "keywords": [
     "nuxt",
